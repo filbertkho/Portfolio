@@ -193,28 +193,24 @@
     max-width:220px;
   }
 
-  /* HERO PHOTO — the photo of you sits beside the headline */
- .hero-top {
-    display: grid;
-    /* 1. Ubah 260px menjadi lebih besar (misal: 400px) */
-    grid-template-columns: 1fr 400px; 
-    gap: 48px;
-    align-items: end;
-    margin-bottom: 56px;
+/* HERO PHOTO — the photo of you sits beside the headline */
+.hero-top {
+  display: grid;
+  grid-template-columns: 1fr 450px; /* Ditambah lebarnya sedikit jadi 450px agar landscape-nya makin pas */
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 56px;
 }
-
 .hero-photo {
-    /* 2. Ubah 800px menjadi 100% agar dia otomatis pas dengan kolom grid di atas */
-    width: 100%; 
-    /* 3. Naikkan tingginya sedikit agar proporsinya tetap bagus dan proporsional */
-    height: 300px; 
-    border: 2px solid var(--ink);
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    background: var(--blue);
-    flex-shrink: 0;
-    cursor: pointer;
+  width: 100%;
+  height: 280px; /* Diturunkan ke 280px agar bentuknya jadi landscape dan teks otomatis naik ke atas */
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: var(--blue);
+  flex-shrink: 0;
+  cursor: pointer;
 }
   .hero-photo img{
     width:100%;
